@@ -1,0 +1,215 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),url('img/hacking.jpg');
+    height:100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+body{
+    font-size:20px;
+    overflow:hidden;
+    color:#fff;
+    font-family: 'Flamenco', cursive;
+}
+
+
+.row img{
+    height: 80px;
+    width:80px;
+    float: left;
+    margin-top: 20px;
+}
+
+.row{
+    /* use for responsive */
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.clearfix:after{
+    content:".";
+    visibility: hidden;
+    display: block;
+    height:0px;
+    clear: both;
+}
+
+.main-nav{
+    float:right;
+    margin-top: 40px;
+    margin-right: 30px;
+}
+
+.main-nav li{
+    display:inline-block;
+    margin-left: 40px;
+    list-style:none;
+   
+}
+.main-nav li a{
+    padding:4px 0px;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 84%;
+    font-weight:100px;
+}
+
+.main{
+    width: 1180px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-45%,-0%);
+
+}
+.main h1{
+    font-size:160%;
+    word-spacing: 10px;
+    margin-bottom: 40px;
+    font-weight: lighter;
+}
+
+.btn{
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    border:2px solid #fff;
+    border-radius:200px;
+    transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+
+.btn1{
+    background-color: transparent;
+    background-color: #fff;
+    margin-right: 19px;
+}
+
+.main-nav li a:hover{
+    border-bottom: 2px solid rgb(40, 43, 187);
+
+}
+
+.btn1:hover{
+    background-color:transparent;
+    background-color:rgb(45, 36, 53);
+}
+.btn2:hover{
+    background-color: transparent;
+    background-color: #fff;
+}
+span{
+    animation: imtiaz 1s infinite;
+}
+@keyframes imtiaz{
+    0%{color:red}
+    25%{color:rebeccapurple}
+    50%{color:blue}
+    100%{color:gold}
+}
+.centerdiv{
+  position: relative; 
+    top:400px; 
+    /* height:100vh; */
+    display: flex;
+    gap: 50px;
+    /* border:1px solid white; */
+    height:50px;
+    float:right;
+    margin-right: 20px;
+
+  }
+  .centerdiv i{
+      font-size:30px;
+      padding:7px;
+    
+  }
+
+  a i{
+    transition:all 0.3s linear;
+}
+a:hover i{
+    transform: scale(1.4);
+}
+
+#fb{
+     color: blue;
+    }
+    #instagram{
+      color: #e84393;
+
+    }
+     #twitter
+     {
+      color: #0097e6;
+     }
+     #yt{
+      color: #e84118;
+
+     }
+     #linkedin{
+      color: #0097e6;
+
+     }
+
+.mobile-icon{display:none;}
+/* ////////////RESPONSIVE QUERY//////////////////////////////////////// */
+@media only screen and (max-width:1180px){
+    .main{
+        width:100%;
+        padding:0 2%;
+
+    }
+}
+
+@media only screen and (max-width:1007px){
+    h1{
+        font-size:200%;
+    }
+}
+
+@media only screen and (max-width:768px){
+    h1{font-size:180%;}
+    .main-nav{display:none}
+    .mobile-icon{
+     display:block;
+      color:#fff;
+      float: right;
+      margin-top:30px;
+      margin-right: 20px;
+    }
+    .main-nav{
+        float:left;
+    }
+    .main-nav li{
+        display:block;
+        /* float: left; */
+        margin-top:10px;
+    }
+}
+
+@media only screen and (max-width:415px) {
+    .btn{
+        margin-bottom: 10px;
+        padding:10px 10px;
+    }
+    .hd{
+        font-size:50px;
+    }
+
+}
+
+
+@media only screen and (max-width:393px) {
+    .btn{
+        margin-bottom: 10px;
+        padding:10px 10px;
+    }
+    /* h1{font-size: 00%;} */
+    
+}
